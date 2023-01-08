@@ -13,3 +13,50 @@ Mostly following through A Cloud Guru's content, but will supplement as needed
     - Launched in 2008
     - Edge locations can act as a sort of CDN
 - Identity Access Management
+    - IAM documents any activity on the account
+    - `Organizations` are the root of the hierarchy, kinda like an Azure account
+    - `Folders` act like subscriptions in Azure
+    - `Projects` are like resource groups
+- Networking
+    - VPC, routes, and firewall rules are global resources
+    - Subnets are regional
+    - You do get a default network and subnets created for you
+    - The GUI config will actually give you a copy of the CLI version of what you configured
+- Compute Engine Instance
+    - Custom OS options are available
+    - Tags are also known as simply `metadata`
+    - There are four different types
+        - `E` is for general purpose
+        - `M` is for memory optimize
+        - `N` is General purpose, but balanced price / performance
+        - `C` is for compute
+- Cloud Storage
+    - Bucket names are globally unique
+    - There are various classes based on the need for access and availability
+        - `Storage` for frequent access and short live
+        - `Nearline` for infrequently accessed data
+        - `Coldline` is best for disaster recovery
+        - `Archive`
+    - Autoclass is an option for per object classification
+        - Once you go to a standard class, you can't go back
+- Database Services
+    - Relational:
+        - Cloud SQL
+            - MySQL
+            - PostgreSQL
+            - SQL Server
+        - Cloud Spanner is globally distributed
+    - Non-relational
+        - Big table
+        - Firestore is fully managed
+        - Memory Store is in-memory
+- Big Data and Messaging
+    - Big Query is a data warehouse
+    - Google Dataflow is a managed Apache Beam pipeline for data processing
+    - Pub/Sub is a fully managed messaging service
+        - You could use this as a sort of Azure Function type automation
+- Advanced Major Services
+    - Understanding Security
+        - Data is encrypted in transit and in rest
+    - How are resources monitored?
+        - Cloud Monitoring is their version of Azure Monitor
