@@ -60,3 +60,19 @@ Mostly following through A Cloud Guru's content, but will supplement as needed
         - Data is encrypted in transit and in rest
     - How are resources monitored?
         - Cloud Monitoring is their version of Azure Monitor
+### Cost Control on GCP
+- Billing Organization
+    - Billing accounts are also under the Organization layer
+    - You can have multiple billing account
+    - A single billing account can be associated with multiple projects
+    - Projects need a billing account to even create billable resources
+- Cost Visibility and Analysis
+    - You can export billing data to BigQuery, but soon you will not be able to export this to Cloud Storage soon
+- Reducing Costs on GCP
+    - Many tools to help reduce costs are automatically implemented
+    - Rightsizing recommendations will be made
+    - Long running compute are automatically discounted
+        - Does not stack with committed discounts
+    - Preemptible VM (aka spot instances)
+        - Max life of 24 hours regardless
+### GCP Essentials
