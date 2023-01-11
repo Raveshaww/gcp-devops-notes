@@ -100,4 +100,7 @@ Mostly following through A Cloud Guru's content, but will supplement as needed
         - `gsutil` stands for `google storage utility`
         - `Cloud Datastore` is NoSQL 
         - `Cloud Bigtable` is a fully managed massively scalable NoSql database
-        - 
+            - Considered a wide column database, instead of a document database
+            - No SQL-like language is available
+            - single key per row
+### Google Certified Associate Cloud Engineer
