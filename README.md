@@ -76,3 +76,28 @@ Mostly following through A Cloud Guru's content, but will supplement as needed
     - Preemptible VM (aka spot instances)
         - Max life of 24 hours regardless
 ### GCP Essentials
+- Working with GCP
+    - `Google Cloud Marketplace` is GCP's market place
+    - Most things are billed per second
+    - `Stack Driver` is GCP's integrated monitor and logging platform (Is this the final name?)
+- Running Apps with Compute
+    - App Engine is PaaS (basically Azure Service with some more features built in)
+        - Auto scaling and auto load balancing
+        - Standard env is more proprietary with limited language support, but a faster spin-up time and less expensive
+        - Flexible env is based on docker
+        - Blob store is legacy
+        - Code scanning
+    - GKE
+        - Load balancing is integrated
+        - node pools are supported
+        - Auto scale for clusters and nodes
+        - Auto upgrades
+        - Auto repair
+        - Auto logging and monitoring
+    - Cloud Functions (basically azure functions)
+        - Serverless
+    - Managing Storage and Databases
+        - `gsutil` stands for `google storage utility`
+        - `Cloud Datastore` is NoSQL 
+        - `Cloud Bigtable` is a fully managed massively scalable NoSql database
+        - 
