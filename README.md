@@ -104,3 +104,64 @@ Mostly following through A Cloud Guru's content, but will supplement as needed
             - No SQL-like language is available
             - single key per row
 ### Google Certified Associate Cloud Engineer
+- Intro to GCP
+    - GCP's three pillars are
+        - Trust and Security
+            - Secure by design
+        - Open Cloud
+            - Open source
+        - Analytics and AI
+    - Networking is divided into three layers
+        - VPC
+        - Routers
+        - Subnets
+    - Security
+        - Data at rest is chunked, encrypted, and stored across a range of servers
+    - Database
+        - Firestore is NoSQL
+        - Firebase lets you store and sync data for your users in real time
+    - Cloud shell
+        - 5gb of storage
+- Cloud Storage
+    - Cloud Firestore is separate
+        - Fully managed NFS
+    - Disks
+        - Zonal is the default offered for VMs
+        - Regional Persistent Disk
+            - Replicated across two zones
+        - Local SSD
+- Compute Engine and VPC
+    - Accelerator optimized is for high performance workloads like parallel computing and API
+    - Managed instance group is a collection of VMs that you can manage as a single entity (tldr vm scaleset)
+    - Snapshots seem to be the fastest way to "clone" an instance, and can be used to create a VM image
+    - You are allowed to bring your IPs
+    - Share VPC allows you to use one VPC with multiple projects
+- Kubernetes
+    - GKE
+        - It's the open source K8S platform under the hood
+        - Consists of compute engine machines to create a cluster
+        - Broken into two things
+            - control plane
+                - manages worker nodes
+                - consists of
+                    - api server
+                    - etcd
+                    - scheduler (also monitors)
+                    - control managers
+            - nodes
+                - A cluster is a group of one or nodes
+                - Nodes run one or more pods
+                    - Each node gets a cidr range
+                - pods consist of
+                    - container run time
+                    - kubelet to ensure stuff is running
+                    - kubeproxy for networking
+                    - each pod has its own IP address
+                - Kubectl lets you run commands against the cluster
+- Cloud Functions
+    - CLoud run can deploy containers (kinda like function app but with containers)
+- GCP Monitoring and Logging Services
+    - `cloud ops` is the name of the agent you install on VMs
+- Big Data Resources
+    - cloud dataproc is a managed Hadoop / mapreduce, etc
+    - datalab enables interactive data exploration
