@@ -165,3 +165,15 @@ Mostly following through A Cloud Guru's content, but will supplement as needed
 - Big Data Resources
     - cloud dataproc is a managed Hadoop / mapreduce, etc
     - datalab enables interactive data exploration
+### GCP DevOps Part 1
+- Welcome!
+    - BOPT
+        - You need to understand the business
+        - You need to understand the teams inside the business
+        - You need to understand processes and techniques
+        - You need to understand the tech and tools at work
+- About the Cert
+    - Exam is about 2 hours
+    - Google offers a practice exam
+- Foundation and Concepts
+- Job Role Breakdown
