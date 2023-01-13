@@ -264,5 +264,45 @@ Mostly following through A Cloud Guru's content, but will supplement as needed
             - keeps an eye on code performance
 - Reacting to Incidents
     - Handling Incident Response
+        - Specific roles should be designated to team, with full autonomy in their role
+        - Roles should include:
+            - Incident commander
+                - In charge during incident, designating responsibilities and taking all roles not designated
+            - Operational team 
+                - The only team allowed to make changes, no freelancers
+            - Communication Lead
+                - Public face of IR
+            - Planning lead
+                - Supports Ops team with long-term actions and arranging hand-off, and tracking system changes
+        - Established Command post
+            - such as a physical location or a slack channel
+            - Live incident state doc
+        - Handoffs **must** be clear and communicated
+        - It is recommended to rotate roles among team members
     - Managing Service Lifecycle
+        - SRE help co-design the service
+        - SRE can contribute to the creation of the service
+        - The lifecycle is:
+            - Architecture and design
+            - Active Development
+            - Limited availability
+            - General availability
+            - Depreciation
     - Ensuring Healthy Operations Collab
+        - Postmortem agenda
+            - gather metadata
+                - what systems were affected?
+                - Who responded?
+                - Include machine readable data:
+                    - Time to identify
+                    - Time to act
+                    - Time to resolve
+            - build timeline
+                - When and how was the incident reported?
+                - When did the response start?
+                - When and how did we make it better?
+                - When was it over?
+            - Generate report
+                - Report will be initiated by incident commander
+                - All participants need to add their own details on actions taken
+                - Was there anything done that needs to be rolled back?
