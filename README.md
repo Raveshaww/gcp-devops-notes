@@ -210,7 +210,30 @@ Mostly following through A Cloud Guru's content, but will supplement as needed
         - SLAs should be a bit below your SLOs for some wiggle room
 - Making the Most of Risk
     - Setting Error Budgets
+        - Balances innovation and reliability
+        - Developers oversee own risk
+        - If budget is exceeded
+            - Releases temporarily halted
+            - System testing and dev expanded
+            - Performance improved
+        - error budget = 100% - SLO
+        - Error budget of 0.002 = 86.4 minutes a month
+        - Error budgets are good
+            - Releasing new features
+            - Expected system changes
+            - Inevitable failure
+            - Planned downtime
+            - Risky experiments
+            - Unforeseen circumstances
     - Defining and Reducing Toil
+        - Toil tends to be response-driven and not proactive
+        - Devoid of enduring value
+        - Toil is not
+            - Email
+            - expense reports
+            - commuting
+            - meetings
+                - These are overhead
 - Generating SRE Metrics
     - Monitoring Reliability
     - Alerting Principles
