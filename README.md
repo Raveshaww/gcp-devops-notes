@@ -236,8 +236,32 @@ Mostly following through A Cloud Guru's content, but will supplement as needed
                 - These are overhead
 - Generating SRE Metrics
     - Monitoring Reliability
+        - White-box monitoring
+            - metrics exposed by internals of system
+            - focus is on predicting problems before they happen
+        - Black-box monitoring
+            - Testing externally visible behavior as a user would see it
+            - symptom-oriented active problems 
+            - Best for paging
+        - Alerts and dashboards typically use metrics
     - Alerting Principles
-    - Investigating SRE Tools       
+        - error budget burn rate = 100% - slo * (events / set time)
+        - Slow burn alerting policy is to warn that your error budget is in trouble, but it is not as urgent
+            - Needs a longer lookback period to notice
+            - Threshold should be slightly higher
+    - Investigating SRE Tools 
+        - K8S engine 
+        - Container registry
+        - Cloud Build
+        - Cloud source repos
+        - Spinnaker for Google Cloud
+            - Triggers pipelines and extend CI/CD pipeline
+        - Cloud monitoring
+        - Cloud logging
+        - Cloud debugger
+        - Cloud trace
+        - Cloud profiler
+            - keeps an eye on code performance
 - Reacting to Incidents
     - Handling Incident Response
     - Managing Service Lifecycle
