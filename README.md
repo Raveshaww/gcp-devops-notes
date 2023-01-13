@@ -174,3 +174,21 @@ Mostly following through A Cloud Guru's content, but will supplement as needed
 - About the Cert
     - Exam is about 2 hours
     - Google offers a practice exam
+### GCP DevOps Part 2
+- Balancing Change, Velocity, and Service Reliability with SREs
+    - Big Picture
+        - It's recommended that Dev and Ops share the same tools and techniques, like Jira and etc
+    - SLI
+    - SLO
+    - SLA
+- Making the Most of Risk
+    - Setting Error Budgets
+    - Defining and Reducing Toil
+- Generating SRE Metrics
+    - Monitoring Reliability
+    - Alerting Principles
+    - Investigating SRE Tools       
+- Reacting to Incidents
+    - Handling Incident Response
+    - Managing Service Lifecycle
+    - Ensuring Healthy Operations Collab
