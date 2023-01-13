@@ -179,8 +179,35 @@ Mostly following through A Cloud Guru's content, but will supplement as needed
     - Big Picture
         - It's recommended that Dev and Ops share the same tools and techniques, like Jira and etc
     - SLI
+        - Quantified level of availability
+        - Some examples
+            - request latency
+            - failure rate
+            - batch throughput
+            - Traffic
+            - Saturation
+        - Transparent SLIs allow you to see GCP services SLIs 
+        - SLI = ( Good events / valid events ) * 100
+        - A good SLI shouldn't have frequent spikes in metrics - if charted, it should be a smooth and easy to read chart
+        - Limit the number of SLIs
+        - Reduce Complexity
+            - Not all metrics make good SLIs
+        - Prioritize journeys
+            - Select most valuable to users
+        - Aggregate similar SLIs
+            - Turn into rate, average, or percentile
+        - Bucket to distinguish response classes
+            - Not all requests are the same
+            - Requesters may be human or background apps
+        - Collect data at load balancer
+            - Collects data closer to the user
     - SLO
+        - 100% reliability is not a good objective
+        - Agreed-upon bounds on how often SLIs must be met
+        - You may need to adjust your SLOs to allow for more user satisfaction
     - SLA
+        - SREs are not usually involved in drafting SLAs
+        - SLAs should be a bit below your SLOs for some wiggle room
 - Making the Most of Risk
     - Setting Error Budgets
     - Defining and Reducing Toil
