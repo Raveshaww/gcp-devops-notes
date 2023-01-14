@@ -306,3 +306,11 @@ Mostly following through A Cloud Guru's content, but will supplement as needed
                 - Report will be initiated by incident commander
                 - All participants need to add their own details on actions taken
                 - Was there anything done that needs to be rolled back?
+### GKE 
+- Intro to Containers
+    - In order to push to gcr.io, you need the full project name including the random numbers Google includes at the end of the project name
+        - Example: `docker tag myapp gcr.io/learninggke-374700/myapp` > `docker push gcr.io/learninggke-374700/myapp`
+- Intro to GKE
+- Deploying Applications
+- Advanced GKE Operations
+- Wrapping up
