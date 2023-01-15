@@ -311,6 +311,32 @@ Mostly following through A Cloud Guru's content, but will supplement as needed
     - In order to push to gcr.io, you need the full project name including the random numbers Google includes at the end of the project name
         - Example: `docker tag myapp gcr.io/learninggke-374700/myapp` > `docker push gcr.io/learninggke-374700/myapp`
 - Intro to GKE
+    - Clusters contain
+        - one or more masters
+            - These run the control plane
+            - They make decisions
+            - contains
+                - etcd
+                - api server
+                - scheduler
+                - cloud controller manager
+                - kube controller manager
+        - one or more nodes
+            - Nodes are the workers
+            - They are the resources of the cluster
+            - Contains:
+                - kubelet, which is a k8s agent to take instructions from the control plane
+                - kube-proxy, for network connections
+                - container runtime
+    - You don't ever touch the master control panel in GKE
+    - Everything in k8s is an object
+    - In order to use kubectl, you need to get credentials
+        - `gcloud container clusters get-credentials your-first-cluster-1 --zone=us-central1-c`
+    - To create a deployment:
+        - `kubectl create deployment nginx --image nginx`
+    - To expose the endpoint:
+        - `kubectl expose deployment nginx --port=80 --type=LoadBalancer`
+    - 
 - Deploying Applications
 - Advanced GKE Operations
 - Wrapping up
