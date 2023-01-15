@@ -336,6 +336,15 @@ Mostly following through A Cloud Guru's content, but will supplement as needed
         - `kubectl create deployment nginx --image nginx`
     - To expose the endpoint:
         - `kubectl expose deployment nginx --port=80 --type=LoadBalancer`
+    - A pod is the smallest deployable unit in k8s
+    - Most pods will contain only one container, but some may contain more
+        - an nginx container may be called a side car, for example
+    - Containers in the same pod share the same environment (i.e. IP address and volumes)
+    - Pods should be designed around a single application
+    - You can port-forward to a pod with kubectl
+        - `kubectl port-forward nginx 8080:80`
+    - You can open an interactive shell with a pod
+        - `kubectl exec -it multi -c ftp-container -- /bin/bash`
     - 
 - Deploying Applications
 - Advanced GKE Operations
