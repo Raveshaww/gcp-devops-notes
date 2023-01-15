@@ -360,3 +360,15 @@ Mostly following through A Cloud Guru's content, but will supplement as needed
 - Deploying Applications
 - Advanced GKE Operations
 - Wrapping up
+### GCP DevOps Part 3
+- Understanding GCP CI/CD Pipelines
+    - Estimations that good QA can lead to a 33% cost reduction in development
+    - 
+- CI on GCP
+- Cloud Source Repos
+- Cloud Build
+- Artifact Management with Container Registry
+- CD Overview
+- Spinnaker
+- Securing the Deployment Pipelines
+- Full Dev Pipeline
