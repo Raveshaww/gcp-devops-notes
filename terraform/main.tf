@@ -34,6 +34,7 @@ resource "google_container_node_pool" "primary_preemptible_nodes" {
   name       = "my-node-pool"
   location   = google_container_cluster.primary.location
   cluster    = google_container_cluster.primary.name
+  # This let's us be absolutely sure that only one node will exist
   autoscaling {
     total_min_node_count = 1
     total_max_node_count = 1

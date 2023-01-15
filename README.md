@@ -345,7 +345,18 @@ Mostly following through A Cloud Guru's content, but will supplement as needed
         - `kubectl port-forward nginx 8080:80`
     - You can open an interactive shell with a pod
         - `kubectl exec -it multi -c ftp-container -- /bin/bash`
-    - 
+    - Copies of a pod are a ReplicaSet
+    - We don't create ReplicaSets on their own, instead we use deployments
+    - This allows the controller to enforce the desired state
+    - A service exposes a set of pods to the network
+    - A service assigns a fixed IP to your pod replicas
+    - Three main types of service
+        - clusterip assigns a fixed ip inside your cluster
+        - nodeport assigns a specific port to every node inside your service
+        - loadbalancer creates a loadbalancer in the provider you are using (i.e. google load balancer in gke)
+    - Pods that match a label that is in a selector will be part of a specific service
+    - Services also provide a built-in DNS name
+    - Tainting a node tells a scheduler to not use the node
 - Deploying Applications
 - Advanced GKE Operations
 - Wrapping up
