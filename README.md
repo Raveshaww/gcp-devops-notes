@@ -363,9 +363,12 @@ Mostly following through A Cloud Guru's content, but will supplement as needed
 ### GCP DevOps Part 3
 - Understanding GCP CI/CD Pipelines
     - Estimations that good QA can lead to a 33% cost reduction in development
-    - 
-- CI on GCP
+    - Cost savings for CI/CD tends to be at least 10%
+    - CI isn't necessarily about it being functionally so much as build-able
+    - Continuous Delivery is about making sure that the code base is always releasable
 - Cloud Source Repos
+    - You can perform a one-way mirror with Github / Bitbucket
+    - "google search for your code"
 - Cloud Build
 - Artifact Management with Container Registry
 - CD Overview
