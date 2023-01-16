@@ -370,6 +370,23 @@ Mostly following through A Cloud Guru's content, but will supplement as needed
     - You can perform a one-way mirror with Github / Bitbucket
     - "google search for your code"
 - Cloud Build
+    - Cloud Build Concepts
+        - Need to call a cloud builder via a yaml or json file
+            - Typically called `cloudbuild.yaml`
+        - A cloud builder runs in a container, and can be packaged with common languages and tools
+            - You can use many different types of images
+        - You could actually have cloud build simply run the dockerfile build instead
+        - Triggers can publish to pub/sub for further automation
+        - You want to make sure to give Cloud Build a service account
+        - The command to manually send a build to Cloud Build is `gcloud builds submit`
+        - When using triggers, Cloud Build will operate from the root level of the repo
+    - Best PRactices for Build Performance
+        - Leaner containers
+            - Separate app build process and runtime build via cloudbuild file
+        - Using cache options
+        - Cut bloat
+            - You can also include a .gcloudignore file
+        - Adjust VM sizes (bigger is better)
 - Artifact Management with Container Registry
 - CD Overview
 - Spinnaker
