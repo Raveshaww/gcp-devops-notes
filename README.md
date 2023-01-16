@@ -393,6 +393,8 @@ Mostly following through A Cloud Guru's content, but will supplement as needed
         - Spinnaker / jenkins / etc on a GKE cluster will auth with the cluster service account
         - for CE, you need to assign the right **scope** to storage
 - CD Overview
+    - Cloud build will simply replace pods with newer version, so it's better to just use kubernetes itself to deploy new versions of the app
+        - This also allows for more advanced methods of deployment
 - Spinnaker
 - Securing the Deployment Pipelines
 - Full Dev Pipeline
