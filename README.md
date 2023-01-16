@@ -388,6 +388,10 @@ Mostly following through A Cloud Guru's content, but will supplement as needed
             - You can also include a .gcloudignore file
         - Adjust VM sizes (bigger is better)
 - Artifact Management with Container Registry
+    - Container Registry Concepts
+        - For IAM permissions, cloud storage access is what is important here
+        - Spinnaker / jenkins / etc on a GKE cluster will auth with the cluster service account
+        - for CE, you need to assign the right **scope** to storage
 - CD Overview
 - Spinnaker
 - Securing the Deployment Pipelines
