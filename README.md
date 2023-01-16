@@ -396,5 +396,21 @@ Mostly following through A Cloud Guru's content, but will supplement as needed
     - Cloud build will simply replace pods with newer version, so it's better to just use kubernetes itself to deploy new versions of the app
         - This also allows for more advanced methods of deployment
 - Spinnaker
+    - Concepts
+        - GCP favors Spinnaker
+        - It can take part in application management
+        - It helps make k8s yaml files and handle kubectl commands
+    - Set up
+        - Google provides install scripts, though remember it's not natively integrated
+            - some of the items it sets up:
+                - GKE cluster
+                - Redis database
+                - Cloud storage bucket
+                - service account
+        - Web interface is called `deck`
+        - There is a marketplace item that helps guide you through the install
+        - cmdline is called `halyard`
+        - You can either use the cloud shell to access the web console, or you can expose it via an identity aware proxy
+    - Deploy
 - Securing the Deployment Pipelines
 - Full Dev Pipeline
