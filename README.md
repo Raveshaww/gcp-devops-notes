@@ -411,6 +411,24 @@ Mostly following through A Cloud Guru's content, but will supplement as needed
         - There is a marketplace item that helps guide you through the install
         - cmdline is called `halyard`
         - You can either use the cloud shell to access the web console, or you can expose it via an identity aware proxy
-    - Deploy
 - Securing the Deployment Pipelines
-- Full Dev Pipeline
+    - app-layer secrets encryption:
+        - stored in etcd
+        - encrypted by cloud kms
+        - apps access at runtime
+    - encrypt secrets in cloud storage
+    - third party (hashicorp vault)
+    - Container registry scans images stored within
+        - by default, images older than 30 days are not scanned
+    - limited to certain versions of linux
+    - Binary Authorization requires an Anthos subscription
+    - This allows for control over what can be deployed to GKE
+        - For example:
+            - Digitally signed attestation         
+### GCP DevOps Part 4
+- Understanding Ops in Context
+- Monitoring Your Operations
+- Logging Activities
+- SRE and Alerting Policies
+- Optimize Performance with Trace/Profiler
+- Identifying App Errors with Debug/Error Reporting
