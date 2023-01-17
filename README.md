@@ -437,19 +437,40 @@ Mostly following through A Cloud Guru's content, but will supplement as needed
     - Cloud Monitoring Concepts
         - Workspaces are the primary single pane of glass for monitoring data across projects
     - Monitoring Workspaces Concepts
+        - All monitoring tools live in a Workspace
+        - Projects can only contain a single workspace
+        - The name will be the same as the host project and cannot be changed
+        - Projects are associated with a single workspace
+        - Two different workspaces can be merged into a single workspace
+        - Projects can be moved from one workspace to another
+        - Data lives in the project of origin, not the workspace project
+        - You can monitor up to 200 projects
     - Monitoring Workspaces
+        - 
     - Workspaces in Context
+        - 
     - What Are Metrics?
+        - 
     - Exploring Workspace and Metrics
+        - 
     - Monitoring Agent Concepts
+        - 
     - Installing the Monitoring Agent
+        - 
     - Collecting Monitoring Agent Metrics
+        - 
     - Integration with Monitoring APIs
+        - 
     - Create Dashboards with CLI
+        - 
     - GKE Metrics
+        - 
     - What's Up, Doc?
+        - 
     - Uptime Checks
+        - 
     - Establishing Human-Actionable and Automated Alerts
+        - 
 - Logging Activities
 - SRE and Alerting Policies
 - Optimize Performance with Trace/Profiler
