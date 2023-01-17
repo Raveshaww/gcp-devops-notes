@@ -443,34 +443,47 @@ Mostly following through A Cloud Guru's content, but will supplement as needed
         - Projects are associated with a single workspace
         - Two different workspaces can be merged into a single workspace
         - Projects can be moved from one workspace to another
+            - Custom dashboards would be lost
         - Data lives in the project of origin, not the workspace project
         - You can monitor up to 200 projects
-    - Monitoring Workspaces
-        - 
-    - Workspaces in Context
-        - 
     - What Are Metrics?
-        - 
-    - Exploring Workspace and Metrics
-        - 
+        - There are over 1000 pre-created metrics, but you can create your own custom metrics
+            - These can be built on the Monitoring API or an open source library
+        - Value types of metric:
+            - Bool
+            - Int64
+            - Double
+            - String
+        - kind:
+            - Gauge
+                - measures specific instant in time
+            - Delta
+                - Measures change since last recording
     - Monitoring Agent Concepts
-        - 
-    - Installing the Monitoring Agent
-        - 
-    - Collecting Monitoring Agent Metrics
-        - 
+        - Monitoring agent is separate from the logging agent
+        - Monitoring agent is called `collectd`
+        - Logging agent is called `fluentd`
     - Integration with Monitoring APIs
-        - 
+        - You can use the Cloud Monitoring API to make data accessible to external services, like Grafana
+        - You can use this to create and share dashboards en masse with REST and gRPC syntax
+        - If your're exporting metrics:
+            - define metrics with metric descriptor (json format)
+            - export via monitoring api to bigquery
     - Create Dashboards with CLI
-        - 
+        - Create dashboard with gcloud command and config file
+            - `gcloud monitoring dashboards create --config-from-file=[file_name.json]`
+        - same thing with rest api: 
+            - `curl -X POST -H "Authorization: Bearer $gcloud auth application-default print-access-token" -H  "COntent-Type: application/json, charset=utf-8" https://monitoring.googleapis.com/v1/projects/$PROJECT_ID/dashboards -d @config-file.json`
+        - Export dashboard by dashboard id
+            - `gcloud monitoring dashboards describe projects/$PROJECT_NUMBER/dashboards/$DASH_ID --format=json > config-file.json`
     - GKE Metrics
-        - 
-    - What's Up, Doc?
-        - 
-    - Uptime Checks
-        - 
+        - config is simpler, since GCP handles the integration for you after a simple checkbox is checked (turned on by default)
+        - Integrates with prometheus
     - Establishing Human-Actionable and Automated Alerts
-        - 
+        - Creates an incident, which can be in a state of:
+            - open
+            - acknowledged
+            - resolved
 - Logging Activities
 - SRE and Alerting Policies
 - Optimize Performance with Trace/Profiler
