@@ -427,7 +427,29 @@ Mostly following through A Cloud Guru's content, but will supplement as needed
             - Digitally signed attestation         
 ### GCP DevOps Part 4
 - Understanding Ops in Context
+    - Clarifying the Stackdriver/Operations Connection
+        - Stackdriver has been fully integrated into GCP and renamed `Cloud Monitoring`, `cloud logs`, `cloud trace` and so on
+        - Dashboards can be shared across projects
+        - Logs can be retained for up to 10 years
+        - Metrics can be kept up for 24 months and can be set to a 10 second granularity 
+    - Ops Services at a Glance
 - Monitoring Your Operations
+    - Cloud Monitoring Concepts
+        - Workspaces are the primary single pane of glass for monitoring data across projects
+    - Monitoring Workspaces Concepts
+    - Monitoring Workspaces
+    - Workspaces in Context
+    - What Are Metrics?
+    - Exploring Workspace and Metrics
+    - Monitoring Agent Concepts
+    - Installing the Monitoring Agent
+    - Collecting Monitoring Agent Metrics
+    - Integration with Monitoring APIs
+    - Create Dashboards with CLI
+    - GKE Metrics
+    - What's Up, Doc?
+    - Uptime Checks
+    - Establishing Human-Actionable and Automated Alerts
 - Logging Activities
 - SRE and Alerting Policies
 - Optimize Performance with Trace/Profiler
