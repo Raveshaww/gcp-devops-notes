@@ -434,6 +434,11 @@ Mostly following through A Cloud Guru's content, but will supplement as needed
         - Metrics can be kept up for 24 months and can be set to a 10 second granularity 
     - Ops Services at a Glance
 - Monitoring Your Operations
+    - Recap, four golden metrics:
+        - latency
+        - traffic
+        - errors
+        - saturation
     - Cloud Monitoring Concepts
         - Workspaces are the primary single pane of glass for monitoring data across projects
     - Monitoring Workspaces Concepts
@@ -522,4 +527,16 @@ Mostly following through A Cloud Guru's content, but will supplement as needed
         - You can export logs across folders but you must use the CLI
             - `gcloud logging sinks create my-sink storage.googleapis.com/my-bucket --include-children --organization=(organization-ID) --log-filter="logName:activity"`
 - Optimize Performance with Trace/Profiler
+    - What the Services Do and Why They Matter
+        - Cloud Trace:
+            - Distributed tracing system that collects latency data from your apps
+            - Works with app engine, vm's, and containers
+            - Identifies bottlenecks and alerts you immediately
+        - Cloud profiler
+            - Continuously analyzes the performance of CPU or memory-intensive functions executed across an application
+            - Agent based
+            - Profiles can be saved for 30 days, but can also be exported
+            - Free
+    - Accessing the Cloud Trace APIs
+        - Google recommends using OpenTelemetry over Google's libraries or OpenCensus
 - Identifying App Errors with Debug/Error Reporting
