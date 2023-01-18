@@ -540,3 +540,9 @@ Mostly following through A Cloud Guru's content, but will supplement as needed
     - Accessing the Cloud Trace APIs
         - Google recommends using OpenTelemetry over Google's libraries or OpenCensus
 - Identifying App Errors with Debug/Error Reporting
+    - Troubleshooting with Cloud Debugger
+        - Logpoints inject logs into running apps without redeploying them
+    - Managing Errors and Handling Notifications
+        - Notifications enabled per project
+        - Sent to email of specified roles, and may be forwarded to alias or slack channel
+        - Also sent to mobile app
