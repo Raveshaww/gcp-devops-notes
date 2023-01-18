@@ -485,6 +485,42 @@ Mostly following through A Cloud Guru's content, but will supplement as needed
             - acknowledged
             - resolved
 - Logging Activities
+    - Cloud Logging Fundamentals
+        - Admin activity, system event, access transparency:
+            - 400 days
+            - non-configurable
+        - all other log types:
+            - 30 days by default
+            - configurable retention period
+    - Log Types and Mechanics
+        - Scoped by project
+        - No built-in "single pane of glass"
+        - Can export logs org-wide
+        - Always enabled logs don't cost any $
+        - Access transparency logs are only applicable for enterprise or paid support plans
+            - These log Google personnel access to your resources / data
+    - Logging Agent Concepts
+        - It automatically grabs syslog, event viewer, and a whole host of other logs without any config
+    - Logging Filters
+        - order of precedence
+            - `not` > `or` > `and`
+        - `and` is implied
+    - VPC Flow Logs
+        - Near real-time recording
+        - enabled on a subnet by subnet basis
+        - Samples about 1 out of 10 packets to limit data
+        - All VPC flow logs are in the host project if in a shared VPC
+    - Firewall Logs
+        - Applied per firewall rule across entire VPC
+        - Default all "deny all" ingress and "allow all" egress rules are not logged
+            - If you want this, create a duplicate rule
+    - Routing and Exporting Logs
+        - You can export all logs, or just a subset
+        - Three parts: sink, filter, and destination
+        - sink = object for filter / destination pairing
+        - Will only capture new logs, will not import old log
+        - You can export logs across folders but you must use the CLI
+            - `gcloud logging sinks create my-sink storage.googleapis.com/my-bucket --include-children --organization=(organization-ID) --log-filter="logName:activity"`
 - SRE and Alerting Policies
 - Optimize Performance with Trace/Profiler
 - Identifying App Errors with Debug/Error Reporting
