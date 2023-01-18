@@ -521,6 +521,5 @@ Mostly following through A Cloud Guru's content, but will supplement as needed
         - Will only capture new logs, will not import old log
         - You can export logs across folders but you must use the CLI
             - `gcloud logging sinks create my-sink storage.googleapis.com/my-bucket --include-children --organization=(organization-ID) --log-filter="logName:activity"`
-- SRE and Alerting Policies
 - Optimize Performance with Trace/Profiler
 - Identifying App Errors with Debug/Error Reporting
