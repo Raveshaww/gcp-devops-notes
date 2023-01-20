@@ -546,3 +546,15 @@ Mostly following through A Cloud Guru's content, but will supplement as needed
         - Notifications enabled per project
         - Sent to email of specified roles, and may be forwarded to alias or slack channel
         - Also sent to mobile app
+# Practice Exam Notes
+- The `logging agent` is what needs `fluentd`
+- You need to be in the following IAM roles to receive error reporting notifications
+    - project owner
+    - project editor
+    - project viewer
+    - custom role with `cloudnotifications.activities.list`
+- cloud build is designed to run jobs inside of its own project
+- project editors do **not** have access to create export sinks
+- data access logs are not enabled by default
+- You do not need to remove a project from a workspace to add it to another 
+- 
