@@ -557,4 +557,6 @@ Mostly following through A Cloud Guru's content, but will supplement as needed
 - project editors do **not** have access to create export sinks
 - data access logs are not enabled by default
 - You do not need to remove a project from a workspace to add it to another 
-- 
+- The `fluentd` plugin `filter_record_transformer` will allow you to delete sensitive log fields
+- Anthos is also used for centralized container management
+- Google's recommendation is that the first step in an incident is some form of report, i.e., a ticket
