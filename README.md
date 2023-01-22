@@ -550,14 +550,16 @@ Mostly following through A Cloud Guru's content, but will supplement as needed
 # Practice Exam Notes
 - The `logging agent` is what needs `fluentd`
 - You need to be in the following IAM roles to receive error reporting notifications
-    - project owner
-    - project editor
-    - project viewer
+    - `project owner`
+    - `project editor`
+    - `project viewer`
     - custom role with `cloudnotifications.activities.list`
-- cloud build is designed to run jobs inside of its own project
+- `cloud build` is designed to run jobs inside of its own project
 - `project editors` do **not** have access to create export sinks, but `logs configuration writer` do
 - data access logs are not enabled by default
 - You do not need to remove a project from a workspace to add it to another 
 - The `fluentd` plugin `filter_record_transformer` will allow you to delete sensitive log fields
-- Anthos is also used for centralized container management
+- `Anthos` is also used for centralized container management
 - Google's recommendation is that the first step in an incident is some form of report, i.e., a ticket
+- You would need to install the `google-fluentd-catch-all-config` configuration to capture nginx logs
+- `private logs viewer` gives read access to all logs, including `data access` and `access transparency` logs
