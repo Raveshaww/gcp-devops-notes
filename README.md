@@ -537,6 +537,7 @@ Mostly following through A Cloud Guru's content, but will supplement as needed
             - Agent based
             - Profiles can be saved for 30 days, but can also be exported
             - Free
+            - `Wall time` is the total amount of time, not just cpu time
     - Accessing the Cloud Trace APIs
         - Google recommends using OpenTelemetry over Google's libraries or OpenCensus
 - Identifying App Errors with Debug/Error Reporting
@@ -554,7 +555,7 @@ Mostly following through A Cloud Guru's content, but will supplement as needed
     - project viewer
     - custom role with `cloudnotifications.activities.list`
 - cloud build is designed to run jobs inside of its own project
-- project editors do **not** have access to create export sinks
+- `project editors` do **not** have access to create export sinks, but `logs configuration writer` do
 - data access logs are not enabled by default
 - You do not need to remove a project from a workspace to add it to another 
 - The `fluentd` plugin `filter_record_transformer` will allow you to delete sensitive log fields
