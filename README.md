@@ -563,3 +563,4 @@ Mostly following through A Cloud Guru's content, but will supplement as needed
 - Google's recommendation is that the first step in an incident is some form of report, i.e., a ticket
 - You would need to install the `google-fluentd-catch-all-config` configuration to capture nginx logs
 - `private logs viewer` gives read access to all logs, including `data access` and `access transparency` logs
+- Load balancers will not recover instances, so health checks should likely be on the managed instance group
