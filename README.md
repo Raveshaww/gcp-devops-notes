@@ -1,6 +1,7 @@
-# google_devops
-Mostly following through A Cloud Guru's content, but will supplement as needed
-# Notes
+# Google Devops Notes
+Notes from when before I took the Google Cloud Professional Cloud DevOps Engineer exam. May these notes help someone else!
+
+Mostly following through A Cloud Guru's content, but will supplement as needed.
 ### GCP Cloud Concepts
 - Services can generally be broken into four categories
     - Compute
